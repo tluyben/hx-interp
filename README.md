@@ -9,13 +9,18 @@ Supported:
 ---------
 	
 Basic syntax
+
 Class
+
 Interface
+
 Inheritance
+
 Partial conditional compile (#if #ifn #else #end)
 	
 Unsupported:
 -----------
 	
 Enum
+
 Macro
