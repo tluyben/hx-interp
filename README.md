@@ -24,3 +24,5 @@ Unsupported:
 Enum
 
 Macro
+
+TypeDef
