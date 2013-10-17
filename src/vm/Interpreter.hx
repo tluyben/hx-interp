@@ -344,7 +344,7 @@ class Interpreter
 			}
 			else
 			{
-				return error(EInvalid("assignment"));
+				error(EInvalid("assignment"));
 			}
 		}
 		else
