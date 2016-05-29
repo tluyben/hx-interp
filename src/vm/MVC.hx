@@ -31,7 +31,7 @@ class MVC
 		observerMap = new Map<String, Array<Observer>>();
 	}
 	
-	public static function finalize()
+	public static function _finalize()
 	{
 		proxyMap = null;
 		mediatorMap = null;

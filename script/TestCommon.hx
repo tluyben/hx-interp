@@ -7,7 +7,7 @@ import vm.MVC;
 class TestCommon
 {
 	var a = 3;
-	var b;
+	var b:Int;
 	
 	function new(b:Int)
 	{
@@ -51,7 +51,7 @@ class TestCommon
 		return total;
 	}
 	
-	function nestedFun():Void
+	function nestedFun():Int->Int->Int
 	{
 		var me = this;
 		return function (a:Int, b:Int) { return a + b + me.a; };
@@ -63,6 +63,7 @@ class TestCommon
 		{
 			return 1;
 		}
+                return 0;
 	}
 	
 	function testIf2(v:Int):Int
@@ -111,6 +112,7 @@ class TestCommon
 	
 	static function main()
 	{
+                MVC.initialize();
 		trace("Hello compiler");
 		
 		//new ABC();
@@ -179,7 +181,7 @@ interface BB
 
 class CommandA
 {
-	static function execute(n:Notification)
+	public static function execute(n:Notification)
 	{
 		trace("run cmd:name: " + n.name);
 		trace("start mvc");
